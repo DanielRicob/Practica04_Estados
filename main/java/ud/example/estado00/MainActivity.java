@@ -55,4 +55,10 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Toast.makeText(this, "Se Ejecuto el Metodo onDestroy", Toast.LENGTH_LONG).show();
     }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        Toast.makeText(this, "Se Ejecuto el Metodo onRestart", Toast.LENGTH_LONG).show();
+    }
 }
